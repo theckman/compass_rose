@@ -1,5 +1,11 @@
 compass_rose
 =================
+[![Build Status](https://img.shields.io/travis/theckman/compass_rose/master.svg)](https://travis-ci.org/theckman/compass_rose)
+[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://tldrlegal.com/license/mit-license)
+[![RubyGems :: RMuh Gem Version](http://img.shields.io/gem/v/compass_rose.svg)](https://rubygems.org/gems/compass_rose)
+[![Coveralls Coverage](https://img.shields.io/coveralls/theckman/compass_rose/master.svg)](https://coveralls.io/r/theckman/compass_rose)
+[![Code Climate](https://img.shields.io/codeclimate/github/theckman/compass_rose.svg)](https://codeclimate.com/github/theckman/compass_rose)
+[![Gemnasium](https://img.shields.io/gemnasium/theckman/compass_rose.svg)](https://gemnasium.com/theckman/compass_rose)
 
 A tiny gem to convert numerical bearings to their string forms.
 
