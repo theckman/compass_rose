@@ -30,7 +30,7 @@ module Compass
   # Get the direction that your bearing is on the Compass Rose
   #
   class Rose
-    VERSION = '0.1.0'
+    VERSION = '0.1.1'
     def self.direction(bearing, num_points)
       CompassRose::Direction.calculate(bearing, num_points)
     end
