@@ -15,6 +15,7 @@ Gem::Specification.new do |g|
   g.email       = 't@heckman.io'
   g.homepage    = 'https://github.com/theckman/compass_rose'
   g.license     = 'MIT'
+  g.required_ruby_version = '>= 1.9.3'
 
   g.test_files  = %x(git ls-files spec/*).split
   g.files       = %x(git ls-files).split
