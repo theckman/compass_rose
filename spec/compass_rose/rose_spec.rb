@@ -1,6 +1,5 @@
 # -*- coding: UTF-8 -*-
 require 'spec_helper'
-require 'ap'
 
 TRUSTED_KEYS ||= [
   :north, :east, :south, :west, :northeast, :southeast, :southwest, :northwest,
