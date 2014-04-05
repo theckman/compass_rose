@@ -15,8 +15,6 @@ module CompassRose
       CompassRose::ROSE[n]
     end
 
-    private
-
     def self.validate_bearing(bearing)
       if ![Fixnum, Float].include?(bearing.class) ||
          (bearing >= 360 || bearing < 0)
