@@ -17,13 +17,13 @@ Gem::Specification.new do |g|
   g.license     = 'MIT'
   g.required_ruby_version = '>= 1.9.3'
 
-  g.test_files  = %x(git ls-files spec/*).split
-  g.files       = %x(git ls-files).split
+  g.test_files  = `git ls-files spec/*`.split
+  g.files       = `git ls-files`.split
 
   g.add_development_dependency 'bundler', '~> 1.5'
   g.add_development_dependency 'rake', '~>10.2'
   g.add_development_dependency 'rspec', '~>2.14.1'
-  g.add_development_dependency 'rubocop', '~> 0.20.0'
+  g.add_development_dependency 'rubocop', '~> 0.22.0'
   g.add_development_dependency 'fuubar', '~> 1.3.2'
   g.add_development_dependency 'coveralls', '~> 0.7.0'
 end
