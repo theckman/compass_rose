@@ -6,10 +6,10 @@ shared_examples 'CompassRose::Ranges' do
   end
 
   it 'should have the :s key' do
-    expect(subject.key?(:s)).to be_true
+    expect(subject.key?(:s)).to be_truthy
   end
 
   it 'should ha3ve the :d key' do
-    expect(subject.key?(:d)).to be_true
+    expect(subject.key?(:d)).to be_truthy
   end
 end

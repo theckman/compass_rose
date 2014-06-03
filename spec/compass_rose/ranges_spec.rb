@@ -88,13 +88,13 @@ describe CompassRose::RoseUtils do
 
     it 'should have the :low key' do
       hit.each do |_, v|
-        expect(v.key?(:low)).to be_true
+        expect(v.key?(:low)).to be_truthy
       end
     end
 
     it 'should have the :high key' do
       hit.each do |_, v|
-        expect(v.key?(:high)).to be_true
+        expect(v.key?(:high)).to be_truthy
       end
     end
   end
@@ -148,7 +148,7 @@ describe CompassRose::RANGES do
   end
 
   it 'should have the :four key' do
-    expect(subject.key?(:four)).to be_true
+    expect(subject.key?(:four)).to be_truthy
   end
 
   it 'should have a :four key which is a Hash' do
@@ -156,7 +156,7 @@ describe CompassRose::RANGES do
   end
 
   it 'should have the :eight key' do
-    expect(subject.key?(:eight)).to be_true
+    expect(subject.key?(:eight)).to be_truthy
   end
 
   it 'should have an :eight key which is a Hash' do
@@ -164,7 +164,7 @@ describe CompassRose::RANGES do
   end
 
   it 'should have the :sixteen key' do
-    expect(subject.key?(:sixteen)).to be_true
+    expect(subject.key?(:sixteen)).to be_truthy
   end
 
   it 'should have a :sixteen key which is a Hash' do
@@ -172,7 +172,7 @@ describe CompassRose::RANGES do
   end
 
   it 'should have the :thirtytwo key' do
-    expect(subject.key?(:thirtytwo)).to be_true
+    expect(subject.key?(:thirtytwo)).to be_truthy
   end
 
   it 'should have a :thirtytwo key which is a Hash' do

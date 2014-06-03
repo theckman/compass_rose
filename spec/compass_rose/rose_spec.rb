@@ -18,7 +18,7 @@ describe CompassRose::ROSE do
 
   TRUSTED_KEYS.each do |k|
     it "should contain the #{k} key" do
-      expect(subject.key?(k)).to be_true
+      expect(subject.key?(k)).to be_truthy
     end
 
     it "should contain the #{k} Hash" do
@@ -26,15 +26,15 @@ describe CompassRose::ROSE do
     end
 
     it "should contain the #{k} Hash and it should have the :full key" do
-      expect(subject[k].key?(:full)).to be_true
+      expect(subject[k].key?(:full)).to be_truthy
     end
 
     it "should contain the #{k} Hash and it should have the :abbr key" do
-      expect(subject[k].key?(:abbr)).to be_true
+      expect(subject[k].key?(:abbr)).to be_truthy
     end
 
     it "should contain the #{k} Hash and it should have the :wind_pt key" do
-      expect(subject[k].key?(:wind_pt)).to be_true
+      expect(subject[k].key?(:wind_pt)).to be_truthy
     end
   end
 end
