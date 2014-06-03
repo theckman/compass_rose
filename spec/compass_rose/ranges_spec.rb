@@ -81,19 +81,19 @@ describe CompassRose::RoseUtils do
     end
 
     it 'should have each key should be a hash' do
-      hit.values do |v|
+      hit.each do |_, v|
         expect(v).to be_an_instance_of Hash
       end
     end
 
     it 'should have the :low key' do
-      hit.values do |v|
+      hit.each do |_, v|
         expect(v.key?(:low)).to be_true
       end
     end
 
     it 'should have the :high key' do
-      hit.values do |v|
+      hit.each do |_, v|
         expect(v.key?(:high)).to be_true
       end
     end
