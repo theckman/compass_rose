@@ -21,12 +21,12 @@ describe CompassRose::Direction do
 
     it 'should return true if it is within the south range' do
       r = ranges[:south]
-      expect(direction.check_else(180, r)).to be_true
+      expect(direction.check_else(180, r)).to be_truthy
     end
 
     it 'should return false if it is outside the southern range' do
       r = ranges[:south]
-      expect(direction.check_else(0, r)).to be_false
+      expect(direction.check_else(0, r)).to be_falsey
     end
   end
 
@@ -47,12 +47,12 @@ describe CompassRose::Direction do
 
     it 'should return true if it is within the north range' do
       r = ranges[:north]
-      expect(direction.check_north(0, r)).to be_true
+      expect(direction.check_north(0, r)).to be_truthy
     end
 
     it 'should return false if it is outside the north range' do
       r = ranges[:north]
-      expect(direction.check_north(180, r)).to be_false
+      expect(direction.check_north(180, r)).to be_falsey
     end
   end
 
@@ -253,30 +253,30 @@ describe CompassRose::Direction do
     end
 
     it 'should have the :full key' do
-      expect(c.key?(:full)).to be_true
+      expect(c.key?(:full)).to be_truthy
     end
 
     it 'should have :full String' do
       expect(c[:full]).to be_an_instance_of String
-      expect(c[:full].empty?).to be_false
+      expect(c[:full].empty?).to be_falsey
     end
 
     it 'should have the :abbr key' do
-      expect(c.key?(:abbr)).to be_true
+      expect(c.key?(:abbr)).to be_truthy
     end
 
     it 'should have :abbr String' do
       expect(c[:abbr]).to be_an_instance_of String
-      expect(c[:abbr].empty?).to be_false
+      expect(c[:abbr].empty?).to be_falsey
     end
 
     it 'should have the :wind_pt key' do
-      expect(c.key?(:wind_pt)).to be_true
+      expect(c.key?(:wind_pt)).to be_truthy
     end
 
     it 'should have :wind_pt String' do
       expect(c[:wind_pt]).to be_an_instance_of String
-      expect(c[:wind_pt].empty?).to be_false
+      expect(c[:wind_pt].empty?).to be_falsey
     end
   end
 end
