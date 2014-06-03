@@ -5,7 +5,7 @@ require 'rubocop/rake_task'
 
 RSpec::Core::RakeTask.new(:spec)
 
-Rubocop::RakeTask.new(:rubocop) do |t|
+RuboCop::RakeTask.new(:rubocop) do |t|
   t.patterns =
     %w(compass_rose.gemspec lib/**/*.rb spec/**/*.rb)
   t.fail_on_error = true
